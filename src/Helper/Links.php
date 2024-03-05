@@ -74,7 +74,13 @@ class Links
 		return $objTemplate->parse();
 	}
 
-	static public function parseLinks($objLinks, $model)
+	/**
+	 * Pars Links
+	 * 
+	 * @return array<string>
+	 * 
+	 */
+	static public function parseLinks(Collection $objLinks, ModuleModel $model): array
 	{
 		$limit = $objLinks->count();
 
