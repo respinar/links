@@ -15,6 +15,7 @@
 namespace Respinar\Links\Model;
 
 use Contao\Model;
+use Contao\Model\Collection;
 
 /**
  * Reads and writes Members Act
