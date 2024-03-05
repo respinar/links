@@ -15,6 +15,7 @@ namespace Respinar\LinksBundle\Helper;
 
 use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\FilesModel;
+use Contao\Frontend;
 use Contao\FrontendTemplate;
 use Contao\StringUtil;
 use Contao\System;
