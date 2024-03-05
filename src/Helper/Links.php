@@ -37,9 +37,9 @@ class Links
 	private static $arrUrlCache = array();
 
 	/**
-	 * Generate the module
+	 * Parse Link
 	 */
-	static public function parseLink($objLink, $model, $intCount=0)
+	static public function parseLink(LinksModel $objLink, ModuleModel $model, int $intCount=0): string
 	{
 
 		$objTemplate = new FrontendTemplate($model->links_template);
