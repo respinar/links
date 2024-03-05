@@ -103,11 +103,9 @@ class Links
 	}
 
 	/**
-	 * Sort out protected Categories
-	 * @param array $arrCategories
-	 * @return array
+	 * Sort out protected categories
 	 */
-	public static function sortOutProtected($arrCategories)
+	public static function sortOutProtected(array $arrCategories): array
 	{
 		if (empty($arrCategories) || !\is_array($arrCategories))
 		{
