@@ -17,6 +17,8 @@ use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\FilesModel;
 use Contao\Frontend;
 use Contao\FrontendTemplate;
+use Contao\Model\Collection;
+use Contao\ModuleModel;
 use Contao\StringUtil;
 use Contao\System;
 use Contao\Validator;
