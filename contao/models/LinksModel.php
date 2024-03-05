@@ -31,7 +31,7 @@ class LinksModel extends Model
 	/**
 	 * Find published link items by their parent ID
 	 */
-	public static function findPublishedByPids($arrPids, $blnFeatured=null, $intLimit=0, $intOffset=0, array $arrOptions=array())
+	public static function findPublishedByPids(array $arrPids, bool $blnFeatured=null, int $intLimit=0, int $intOffset=0, array $arrOptions=array()): Collection|null
 	{
 		if (!is_array($arrPids) || empty($arrPids))
 		{
