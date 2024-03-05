@@ -95,9 +95,8 @@ class Links
 		$count = 0;
 		$arrLinks = array();
 
-		while ($objLinks->next())
-		{
-			$arrLinks[] = self::parseLink($objLinks, $model);
+		foreach ($objLinks as $objLink) {
+			$arrLinks[] = self::parseLink($objLink, $model);
 		}
 
 		return $arrLinks;
