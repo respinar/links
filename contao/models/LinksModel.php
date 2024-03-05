@@ -72,7 +72,7 @@ class LinksModel extends Model
 	/**
 	 * Count published link items by their parent ID
 	 */
-	public static function countPublishedByPids($arrPids, $blnFeatured=null, array $arrOptions=array())
+	public static function countPublishedByPids(array $arrPids, bool $blnFeatured=null, array $arrOptions=array()): int
 	{
 		if (!is_array($arrPids) || empty($arrPids))
 		{
